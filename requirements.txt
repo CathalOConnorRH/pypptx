@@ -1,0 +1,7 @@
+python-pptx
+gtts
+moviepy
+pydub
+pdf2image
+gradio_client
+natsort
