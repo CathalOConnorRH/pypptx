@@ -1,0 +1,15 @@
+version: '3'
+services:
+  pypptx-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - backend-service
+    environment:
+      BACKEND_URL: http://backend-service:5000
+
+  backend-service:
+    image: backend-service-image:latest  # Replace with your backend image name
+    ports:
+      - "6969:6969"
